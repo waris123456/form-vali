@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form onsubmit="handleSubmit(event)">
+        <input type="text" on id="fname" placeholder="Enter Your First Name"><br>
+        <input type="text" on id="lname" placeholder="Enter Your Last Name"><br>
+        <input type="text" on id="fatname" placeholder="Enter Your Father Name"><br>
+        <!-- <input type="text" on id="conname" placeholder="Enter Your Country" onblur="selectZipCode()"><br> -->
+        <select name="" id="country" onchange="selectZipCode()">
+            <option value="">Select a country</option>
+            <option value="pak">pakistan</option>
+            <option value="ind">India</option>
+            <option value="usa">usa</option>
+        </select><br>
+        <input type="text" id="zip" placeholder="Enter Your ZIP Code"><br>
+        <input type="submit" value="submit">
+    </form>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
